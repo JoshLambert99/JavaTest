@@ -57,22 +57,15 @@ public class TuneBook
 
     public String findTune(String title)
     {
-    	 int match = Integer.MAX_VALUE;
-        String closestWord = ""; 
-        for(String s:tunes)
-        {
-            int close = Tune.MinimumEditDistance(tunes, s);
-            if (close == 0)
-            {
-                return song;
-            }
-            if (close < match)
-            {
-                match = close;
-                closestWord = s;
-            }
-        }
-        return closestWord;
+
+    	if (title.equalsIgnoreCase(tunes))
+		{
+			System.out.println("Same");
+		}
+		else
+		{
+			System.out.println("Different");
+		}
     }
     
 
@@ -81,7 +74,7 @@ public class TuneBook
         TuneBook tb = new TuneBook("hnj0.abc");
         System.out.println(tb);
 
-        tb.findTune("Scotsman over the Border");
+       // tb.findTune("Scotsman over the Border");
         //t.play();
     }
 

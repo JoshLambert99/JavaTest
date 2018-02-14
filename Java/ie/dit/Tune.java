@@ -23,21 +23,9 @@ public class Tune
 
 	public String toString()
 	{
-		String str = title + ", " + altTitle;
+		String str = str + title + ", " + altTitle;
 
 		return str;
-
-
-		/*String song;
-		return s.append(song + ) 
-		StringBuffer sb = new StringBuffer();
-        for(String song: tunes)
-        {
-            sb.append(word + ", ");
-        }
-
-        return sb.toString();
-		*/
 
 		 
 	}
