@@ -2,5 +2,9 @@ package ie.dit;
 
 public class Tune
 {
-	
-}hhsh
+	private int x;
+
+	private String title;
+	private String altTitle;
+	private String notation;
+}
